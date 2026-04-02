@@ -3,6 +3,9 @@ import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { useEffect } from "react";
 
+// Prevent the splash screen from auto-hiding before the fonts are loaded
+SplashScreen.preventAutoHideAsync();
+
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
     "PlusJakartaSans-Regular": require("../assets/fonts/PlusJakartaSans-Regular.ttf"),
@@ -15,6 +18,7 @@ export default function RootLayout() {
 
   useEffect(() => {
     if (fontsLoaded) {
+      // Hide the splash screen once the fonts are loaded
       SplashScreen.hideAsync();
     }
   }, [fontsLoaded]);
