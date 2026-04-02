@@ -16,12 +16,6 @@
   --color-success: #16a34a;
   --color-destructive: #dc2626;
   --color-subscription: #8fd1bd;
-  --font-sans: "PlusJakartaSans-Regular";
-  --font-sans-light: "PlusJakartaSans-Light";
-  --font-sans-medium: "PlusJakartaSans-Medium";
-  --font-sans-semibold: "PlusJakartaSans-SemiBold";
-  --font-sans-bold: "PlusJakartaSans-Bold";
-  --font-sans-extrabold: "PlusJakartaSans-ExtraBold";
 
   --spacing-0: 0px;
   --spacing-1: 4px;
@@ -85,7 +79,7 @@
   }
 
   .home-add-icon {
-    @apply size-12;
+    @apply size-8;
   }
 
   .home-balance-card {
